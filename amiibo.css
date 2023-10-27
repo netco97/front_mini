@@ -1,0 +1,664 @@
+/* 선택자 */
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+
+
+/* 아미보 롤링 */
+.slider-container {
+    overflow: hidden;
+    width: 100%; /* 슬라이더 컨테이너의 너비 설정 */
+    position: relative;
+}
+
+.slider {
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    animation: scroll 30s linear infinite; /* 무한 롤링 애니메이션 적용 */
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 230px; /* 각 슬라이드의 너비 설정 */
+}
+
+.amiibo_main_slider_img {
+    width: 300px;
+}
+
+@keyframes scroll {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%); /* 왼쪽으로 이동 */
+    }
+}
+
+/* 메인 */
+
+#backImg {
+    background-image: url(https://www.nintendo.co.kr/assets/img/amiibo/amiibo-mainvisual-bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.amiibo_main {
+    background-image: url(https://www.nintendo.co.kr/assets/img/amiibo/amiibo-mainvisual-bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding: 70px 0 5px;
+}
+
+.amiibo_main_text{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 28px auto 35px;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.amiibo_main_slider {
+}
+
+.amiibo_main_slider_img {
+    width: 300px;
+}
+
+/* 네비 */
+.amiibo_navi {
+    border-bottom: 4px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.amiibo_navi_inner {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-left: 40px;
+        padding-right: 40px;
+}
+
+.amiibo_navi_logo {
+    text-align: center;
+    width: 430px;
+}
+
+.amiibo_navi_logo_btn {
+    background: none;
+    border: none;
+    display: none;
+    padding: 0;
+    position: relative;
+    right: 3px;
+    top: 4px;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+.amiibo_navi_list {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.amiibo_navi_list_item {
+    list-style: none;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+.amiibo_navi_list_item:hover {
+    color: red;
+}
+
+.amiibo_navi_list_item_text {
+    display: block;
+    font-weight: 700;
+    padding: 35px 0;
+    position: relative;
+    transition: all .15s;
+    color: #3c3c3c;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    white-space: nowrap;
+}
+
+.amiibo_navi_list_item_text_r {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #e60012;
+}
+
+.amiibo_navi_list_item_text_g {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #3c3c3c;
+}
+
+.amiibo_navi_list_item_text_g::before{
+    background-image: linear-gradient(180deg,#b4b4b4,#b4b4b4 1px,transparent 0,transparent 3px);
+    background-position: 100% 0;
+    background-repeat: repeat-y;
+    background-size: 1px 4px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.amiibo_navi_list_item_text_b {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #3c3c3c;
+}
+
+.amiibo_navi_list_item_text_b::before {
+    background-image: linear-gradient(180deg,#b4b4b4,#b4b4b4 1px,transparent 0,transparent 3px);
+    background-position: 100% 0;
+    background-repeat: repeat-y;
+    background-size: 1px 4px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.amiibo_navi_list_item_text_r:hover {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #e60012;
+}
+
+/* amiibo란? 언더바 */
+#id1::after {
+    background: #e60012;
+    bottom: -40px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 10%;
+    position: absolute;
+    transition: all .15s;
+    width: 80%;
+}
+
+.amiibo_navi_list_item_text_g:hover {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #a5c80f;
+}
+
+.amiibo_navi_list_item_text_g:hover::after {
+    background: #a5c80f;
+    bottom: -40px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 10%;
+    position: absolute;
+    transition: all .15s;
+    width: 80%;
+}
+
+.amiibo_navi_list_item_text_b:hover {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 42px;
+    position: relative;
+    color: #009beb
+}
+
+.amiibo_navi_list_item_text_b:hover::after {
+    background: #009beb;
+    bottom: -40px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 10%;
+    position: absolute;
+    transition: all .15s;
+    width: 80%;
+}
+
+
+/* 본문 */
+.amiibo_largeSection {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding-top: 56px;
+}
+
+.amiibo_innerWidth {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.amiibo_largeContents {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.amiibo_content_img {
+    
+    width: calc(50% - 31.5px);
+
+}
+
+.amiibo_content_img2 {
+    position: relative;
+    
+}
+
+.amiibo_image_mario {
+    background-position: 50%;
+    background-size: cover;
+}
+
+/* 스플래툰 녹색 머리 */
+.amiibo_img1 {
+    position: relative;
+    top: 80px;
+    left: 270px;
+}
+
+/* 야숨 링크 */
+.amiibo_img2 {
+    position: relative;
+    left: 270px;
+    top: 75px;
+}
+
+/* 스매시브라더스 강아지? */
+.amiibo_img3 {
+    position: relative;
+    left: 270px;
+    top: 110px;
+}
+
+.amiibo_content_text {
+    width: calc(50% - 31.5px);
+}
+
+.amiibo_content_text1 {
+    display: flex;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: -0.14em;
+    margin-top: -0.26em;
+    font-weight: 700;
+    color: #3c3c3c;
+    align-items: center;
+
+}
+
+.amiibo_content_text2 {
+    font-size: 16px;
+    line-height: 2em;
+    color: #3c3c3c;
+}
+
+.amiibo_content_textLink {
+    align-items: flex-start;
+    display: flex;
+}
+
+.amiibo_subsection {
+    margin-bottom: 50px;
+}
+
+/* 섹션 흰 배경 */
+.amiibo_subcontents{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 40px;
+    color: #3c3c3c;
+    height: 338px;
+}
+
+/* 섹션 제목 */
+.amiibo_contentTitle {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 35px;
+    width: 455px;
+}
+
+.ammibo_backImg {
+    background-position: 50%;
+    background-size: cover;
+}
+
+.amiibo_section1 {
+    border-top: 2px solid #fff;
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    /* background-color: #f2f2f2; */
+}
+
+.amiibo_section2 {
+    margin-bottom: 50px;
+    margin-top: -40px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.innerWidth {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* 다양한 캐릭터가 amiibo로! */
+.amiibo_section_p {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-top: -0.26em;
+    display: block;
+    font-weight: 700;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    color: #3c3c3c;
+
+}
+
+/*  */
+.amiibo_section_p2 {
+    color: #3c3c3c;
+    font-size: 16px;
+}
+
+/* Nintendo Switch나 닌텐도 3ds와 이어진다 */
+.amiibo_section_p3 {
+    padding-bottom: 42px;
+    padding-top: 70px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: -0.14em;
+    margin-top: -0.26em;
+    
+}
+
+.amiibo_section_p4 {
+        padding-bottom: 55px;
+        text-align: center;
+        font-size: 16px;
+        color: #3c3c3c;
+}
+
+/* 게임기와 연동하려면 박스 */
+
+.amiibo_gameBox {
+    margin-bottom: 25px;
+    padding: 16px;
+    background-color: #f2f2f2;
+}
+
+.amiibo_gameBox_text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: -0.28em;
+    margin-top: -0.52em;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+/* 읽고 쓰기 위 구분선 */
+
+.ammibo_gameBox_bottomLine {
+    background-size: 2px 1px;
+    height: 1px;
+    background-image: linear-gradient(90deg,#b4b4b4,#b4b4b4 1px,transparent 0,transparent 3px);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+    border: none;
+    height: 1px;
+}
+
+.ammibo_gameBox_sc {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ammibo_gameBox_container{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+/* button */
+
+/* 대응 소프트웨어 */
+.amiibo_button {
+    padding: 13px 38px;
+    border-radius: 2px;
+    border-width: 2px;
+    background-color: #009beb;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    transition: border-color .15s linear,background-color .15s linear,color .15s linear;
+}
+
+.amiibo_button:hover {
+    border: 2px solid #009beb;
+    background-color: white;
+}
+
+.amiibo_button span {
+    color: #fff; font-size: 18px;
+}
+
+.amiibo_button:hover span{
+    color: #009beb;
+}
+
+.amiibo_button2 {
+    padding: 13px 38px;
+    border-radius: 2px;
+    border-width: 2px;
+    background-color: #a5c80f;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    transition: border-color .15s linear,background-color .15s linear,color .15s linear;
+    border-color: #a5c80f;
+    border-radius: 2px;
+    border-width: 2px;
+    padding: 11px 30px;
+}
+
+.amiibo_button2:hover {
+    border: 2px solid #a5c80f;
+    background-color: white;
+
+}
+
+.amiibo_button2 span {
+    color: #fff; font-size: 18px;
+}
+
+.amiibo_button2:hover span {
+    color: #a5c80f;
+}
+
+
+/* footer */
+
+/* 게임기와 연동하려면 리스트 */
+.amiibo_footer_li {
+    box-sizing: border-box;
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+
+.amiibo_footer_li::before {
+    content: "";
+    left: 0;
+    background-image: linear-gradient(180deg,#b4b4b4,#b4b4b4 1px,transparent 0,transparent 3px);
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-size: 1px 4px;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.amiibo_footer_span {
+    color: #3c3c3c;
+    transition: border-color .15s linear,background-color .15s linear,color .15s linear;   
+}
+
+.amiibo_footer_li2 {
+    box-sizing: border-box;
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+
+.amiibo_footer_li2_a::before {
+    height: 4px;
+    background-color: #e6e6e6;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+
+.amiibo_footer_li_b::before {
+    height: 4px;
+    background-color: #e6e6e6;
+    content: "";
+    display: block;
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: -15px;
+}
+
+/* svg 버튼 */
+
+/* 게임기와 연동하려면 */
+.svg_button {
+    -ms-flex: 0 0 15px;
+    flex: 0 0 15px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: baseline;
+    width: 15px;
+}
+
+
+/*  */
+
+/* *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+} */

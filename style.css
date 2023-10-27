@@ -1,0 +1,75 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(25, 25, 25) 0%,
+    rgb(117, 117, 116) 90%
+  );
+}
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+.front,
+.back {
+  border-radius: 20px;
+}
+.front {
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: "TheJamsil5Bold";
+  background-color: #d6ba2d;
+  box-shadow: inset 0px 0px 0px 5px #ffd903;
+  text-align: center;
+}
+
+.title {
+  color: #481a05;
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+
+.name {
+  color: #241586;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #202469;
+  margin-bottom: 20px;
+}
+
+.score {
+  width: 100%;
+  height: 160px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.set-score {
+  display: flex;
+  justify-content: space-between;
+}
+
+.set-score:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.set-score > span {
+  color: #291c5a;
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.back {
+  background-color: #d6ba2d;
+  box-shadow: inset 0px 0px 0px 5px #ffd903;
+}

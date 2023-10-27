@@ -1,0 +1,434 @@
+/* 선택자 */
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Malgun Gothic", "맑은 고딕", sans-serif !important;
+        }
+
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+
+        body {
+            -webkit-text-size-adjust: none;
+            line-height: 1;
+            letter-spacing: -0.07em;
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        div {
+            display: block;
+        }
+
+        h3 {
+            font-style: normal;
+        }
+        
+        /* 메인 메뉴 */
+        .next {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            /* font-size: 100%; */
+            font: inherit;
+            vertical-align: baseline;
+            width: 100%;
+            height: 100%;
+        }
+
+        .innerWidth {
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 1200px;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        .detailGrid {
+            padding-top: 70px;
+            width: 1120px;
+            /* overflow: hidden; */
+        }
+
+        .container_p {
+            /* border: 1px solid black; */
+            border-right: 1px solid #e6e6e6;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            float: left;
+            padding-right: 44px;
+            width: calc(100% - 337px);
+            /* width: 783px; */
+        }
+
+        .innerWidthTap {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        .articleHead {
+            border-top: 4px solid #e6e6e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 26px 0 36px;
+            font-size: 12px;
+            color: #e60012;
+        }
+
+        .articleHead_date {
+            font-size: 24px;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .articleHead_date:before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            width: 100%;
+            height: 4px;
+            background: #e60012;
+        }
+
+        .articleBody {
+            /* border: 1px solid black; */
+            letter-spacing: -0.05em;
+            line-height: 26px;
+            position: relative;
+            word-break: break-word;
+        }
+
+        /* 사이드 메뉴 */
+        .sideBox {
+            /* border: 1px solid black; */
+            float: right;
+            width: 293px;
+        }
+
+        .sideBox_wrap {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        .sideBox_article {
+            margin-bottom: 28px;
+            padding: 3px;
+            position: relative;
+            background-color: #e6e6e6;
+        }
+
+        .sideBox_headline:before {
+            background-color: #e60012;
+            content: "";
+            height: 3px;
+            left: 50%;
+            margin-left: -85px;
+            position: absolute;
+            top: -3px;
+            width: 170px;
+        }
+
+        .sideBox_headline {
+            margin-bottom: 28px;
+            padding: 3px;
+            position: relative;
+            background-color: #fff;
+            line-height: 74px;
+            margin-bottom: 3px;
+            color: #e60012;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .sideBox_listItem {
+            margin-bottom: 1px;
+            background-color: #fff;
+            padding: 16px;
+        }
+
+        .sideBox_listItemCard {
+            background-color: #fff;
+            height: 100%;
+            line-height: 1;
+            position: relative;
+        }
+
+        .sideBox_listItemCardLink {
+            display: flex;
+            /* padding: 16px; */
+        }
+
+        .sideBox_sub_thumb {
+            width: 84px;
+            transition: opacity 0.15s;
+            overflow: hidden;
+        }
+
+        .sideBox_sub_content {
+            width: calc(100% - 84px);
+            padding-left: 14px;
+            position: relative;
+            font-size: 12px;
+            line-height: 20px;
+            color: #8c8c8c;
+            box-sizing: border-box;
+        }
+
+        .sideBox_sub_img {
+            width: 84px;
+        }
+
+        .sideBox_sub_title {
+            font-weight: 700;
+            color: #3c3c3c;
+            transition: color 0.15s linear;
+        }
+
+        .sideBox_sub_title:hover {
+            color: red;
+        }
+
+        .sideBox_sub_arrow {
+            bottom: 3px;
+            height: 14px;
+            width: 14px;
+            line-height: 0;
+            position: absolute;
+            right: 0;
+        }
+
+
+        /* 슬라이더 */
+
+        /* #bx-pager {
+            text-align: center;
+            margin-top: -30px;
+          }
+        
+          #bx-pager a {
+            margin: 0 3px;
+          }
+        
+          #bx-pager a img {
+            padding: 3px;
+            border: solid #ccc 1px
+          }
+        
+          #bx-pager a.active img {
+            border: solid #5280DD 1px;
+          } */
+
+        .fakeslider:before {
+            border-top: 4px solid #e60012;
+            content: "";
+            position: absolute;
+            top: -25px;
+            width: 100%;
+        }
+        /* 내부 푸터 */
+
+        
+
+        .innerFooter {
+            /* border: 1px solid black; */
+            padding: 66px 0 98px;
+            border-top: 4px solid #e6e6e6;
+            width: 100%;
+        }
+
+        .innerFooter_width {
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+
+
+        .innerFooter_li{
+            border-left: 4px solid #bebebe;
+            color: #3c3c3c;
+            font-size: 12px;
+            line-height: 1.42;
+            margin-top: 8px;
+            padding: 0 0 0 7px;
+            vertical-align: middle;
+        }
+
+        .innerFooter_shortcut {
+            position: relative;
+            left: 350px;
+            bottom: 115px;
+            min-width: 168px;
+            white-space: nowrap;
+            color: #e60012;
+            border-radius: 2px;
+            border-width: 2px;
+            padding: 11px 30px;
+            background-color: currentColor;
+            border-style: solid;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            transition: border-color .15s linear,background-color .15s linear,color .15s linear;
+        }
+
+        .innerFooter_shortcut:hover{
+            background-color: white;
+        }
+
+        .innerFooter_shortcut:hover span{
+            color: #e60012;
+        }
+
+
+        .innerFooter_shortcut_text {
+            font-size: 14px;
+            line-height: 1;
+            margin-bottom: 0;
+            margin-top: 0;
+            color: #fff;
+            display: block;
+            font-weight: 700;
+            transition: border-color .15s linear,background-color .15s linear,color .15s linear;
+        }
+
+        .innerFooter_link {
+            text-align: center;
+            margin: 0 auto 14px;
+        }
+
+        .innerFooter_link_button {
+            background-color: #e60012;
+            color: #e60012;
+            border-radius: 2px;
+            border-width: 2px;
+            padding: 11px 30px;
+            display: inline-block;
+        }
+
+        .innerFooter_link_button:hover {
+            background-color: #fff;
+            color: #e60012;
+            border: 2px solid #e60012;
+            border-radius: 2px;
+            border-width: 2px;
+            padding: 11px 30px;
+            display: inline-block;
+            transition: border-color .15s linear,background-color .15s linear,color .15s linear;
+        }
+
+        .innerFooter_link_button:hover span{
+            color: #e60012;
+        }
+
+        /* 이미지, 비디오 */
+        .img-wraper {
+            margin-left: auto;
+            margin-right: auto;
+            margin: 41px 0;
+        }
+
+        .video {
+            margin-top: 41px;
+            margin-bottom: 41px;
+        }
+
+        /* 텍스트 */
+        .textBox {
+            font-size: 26px;
+            line-height: 36px;
+            margin: 72px 0 32px;
+            padding: 24px;
+            background-color: #f2f2f2;
+            border-left: 5px solid #e60012;
+            font-weight: 700;
+            color: #3c3c3c;
+        }
+
+        .textBox2 {
+            font-size: 28px;
+            line-height: 40px;
+            margin: 72px 0 32px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .textBox2::before {
+            top: 6px;
+            bottom: 6px;
+            width: 8px;
+            content: "";
+            position: absolute;
+            left: 0;
+            background-color: #e60012;
+        }
+
+        .textBox3 {
+            color: #3c3c3c;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 2.2;
+            color: #3c3c3c;
+        }
+
+        p {
+            color: #3c3c3c;
+            line-height: 2.2;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* svg */
+
+        .svg_button {
+            -ms-flex: 0 0 15px;
+            flex: 0 0 15px;
+            height: 16px;
+            margin-right: 8px;
+            vertical-align: baseline;
+            position: relative;
+            bottom: 2px;
+        }
+
+        .svg_button2 {
+            -ms-flex: 0 0 15px;
+            flex: 0 0 15px;
+            height: 16px;
+            margin-right: 15px;
+            vertical-align: baseline;
+            width: 15px;
+            float: right;
+        }
+
+
+        

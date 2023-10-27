@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          mode: "fade",
+          speed: 1500,
+          auto: true,
+          pauseinteger: 1500,
+          controls: false,
+        });
+      });
+    </script>
+    <style>
+      a {
+        text-decoration-line: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .bx-wrapper {
+        border: none !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 1920px;
+      }
+      .header {
+        width: 100%;
+        height: 45px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .top {
+        width: 100%;
+        height: 756px;
+
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo {
+        width: 340px;
+        margin-top: 62px;
+        margin-left: 50px;
+      }
+      .nav {
+        width: 756px;
+        height: 40px;
+        margin-left: 27px;
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+      }
+      .header_stick {
+        margin: 3%;
+        margin-top: 8.5%;
+      }
+      .title {
+        position: absolute;
+        margin-top: 180px;
+        margin-right: 0px;
+        width: 100%;
+      }
+      .mid_yellow {
+        width: 100%;
+        height: 950px;
+        position: relative;
+        margin-top: -125px;
+        background-image: url("https://www.nintendo.co.kr/character/zelda/img/top/about_image-pc.png");
+        background-size: 100%;
+        flex-direction: column;
+        display: flex;
+      }
+      .machine {
+        width: 600px;
+        height: 160px;
+        margin-top: 95px;
+        margin-left: 625px;
+      }
+      .twitter {
+        width: 30%;
+        height: 30%;
+        margin-left: 540px;
+        margin-top: 135px;
+      }
+      .intro_char {
+        width: 305px;
+        height: 300px;
+        margin-left: 470px;
+        margin-top: -90px;
+      }
+
+      .mid_dark {
+        width: 100%;
+        height: 1550px;
+        background-color: black;
+        background-image: url("https://www.nintendo.co.kr/character/zelda/img/top/zelda-info-bg.png");
+        background-size: 100%;
+        margin-top: -1px;
+        position: relative;
+        display: flex;
+      }
+      .bottom {
+        width: 100%;
+        height: 575px;
+        background-color: black;
+        margin: -1px 0px;
+      }
+      .header_border {
+        width: 104px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header_string {
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 70%;
+        height: 20px;
+        font-size: 91%;
+        text-align: center;
+        color: white;
+      }
+      .intro_about {
+        width: 230px;
+        height: 200px;
+        margin: -270px 0px 0px 120px;
+      }
+      .intro {
+        width: 100px;
+        height: 100px;
+        margin: -270px 0px 0px 910px;
+        z-index: 1;
+      }
+      .CHK {
+        width: 1355px;
+        height: 270px;
+        display: flex;
+        margin: 120px 0px 0px 280px;
+        justify-content: space-between;
+      }
+      .CHK_obj {
+        box-sizing: border-box;
+        border-image: url("https://www.nintendo.co.kr/character/zelda/img/top/menu_item-box.png")
+          52;
+        border-style: solid;
+        border-width: 26px;
+        width: 430px;
+        height: 100%;
+        display: flex;
+        position: relative;
+        overflow: visible;
+      }
+      .CHK_title {
+        width: 230px;
+        height: 100px;
+        position: absolute;
+        margin: 25px 0px;
+      }
+      .CHK_bar {
+        width: 20px;
+        height: 4px;
+        margin: 110px 0px;
+        position: absolute;
+        background-image: url("https://www.nintendo.co.kr/character/zelda/img/top/menu_item-border.png");
+        background-size: 100%;
+      }
+      .CHK_string {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        color: rgba(254, 236, 214, 0.767);
+        margin: 130px 0px;
+        font-size: 13px;
+        line-height: 1.75;
+        letter-spacing: 0.063cm;
+      }
+      .CHK_button {
+        width: 55px;
+        height: 55px;
+        margin: 160px 320px;
+        background-image: url("https://www.nintendo.co.kr/character/zelda/img/top/menu_item-button.png");
+        background-size: 100% 100%;
+        position: absolute;
+      }
+      .event {
+        width: 1355px;
+        height: 500px;
+        flex-direction: column;
+        position: absolute;
+        margin: 690px 280px;
+      }
+      .event2 {
+        width: 1355px;
+        height: 500px;
+        flex-direction: column;
+        position: absolute;
+        margin: 1250px 280px;
+      }
+      .event_img {
+        width: 100%;
+        height: 450px;
+      }
+      .event_str {
+        width: 100%;
+        height: 14px;
+        margin-top: 35px;
+        display: flex;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #d6d0b8;
+      }
+      .lineup {
+        width: 273px;
+        height: 66px;
+        background-image: url("https://www.nintendo.co.kr/character/zelda/img/top/zelda-lineup-button-bg.png");
+        margin: 1815px 820px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+      }
+      .bt {
+        width: 1355px;
+        height: 100px;
+        position: absolute;
+        margin: 440px 280px;
+      }
+      .bt_nav {
+        width: 100%;
+        height: 50px;
+      }
+      .bt_home {
+        width: 100%;
+        height: 12px;
+        display: flex;
+        position: absolute;
+        margin: 25px 0px;
+      }
+      .gohome {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #d6d0b8;
+      }
+      .cor {
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        margin-left: 1060px;
+        font-size: 14px;
+        text-align: right;
+        color: #d6d0b8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div
+          style="width: 100px; height: 100%; background-color: rgb(230, 0, 0)"
+        >
+          <a href="../main.html"
+            ><img src="logo.png" style="width: 90%; margin: 8px 3px" alt=""
+          /></a>
+        </div>
+        <div id="link" style="position: absolute; margin: 0px 1500px"></div>
+      </div>
+      <div class="top">
+        <div
+          class="blackspace"
+          style="
+            width: 255px;
+            height: 500px;
+            position: absolute;
+            z-index: -1;
+            background-color: black;
+            transform: skewX(-33deg);
+            margin: 0px -165px;
+          "
+        ></div>
+        <div
+          class="slider_div"
+          style="width: 1920px; position: absolute; z-index: -2"
+        >
+          <div class="slider">
+            <div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/top_main-bg_01.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/top_main-bg_02.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/top_main-bg_03.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/common/zelda-logo-portal.svg"
+            alt=""
+          />
+        </div>
+        <div class="nav">
+          <div
+            style="width: 24%"
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_02-tab.svg"
+              alt=""
+            />
+          </div>
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+            width="0.2%"
+            alt=""
+            style="padding: 3%"
+          />
+          <div
+            style="width: 17%"
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_03.svg"
+              alt=""
+            />
+          </div>
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+            width="0.2%"
+            style="padding: 3%"
+            alt=""
+          />
+          <div
+            style="width: 24%"
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_04.svg"
+              alt=""
+            />
+          </div>
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+            width="0.2%"
+            style="padding: 3%"
+            alt=""
+          />
+          <div
+            style="width: 16%"
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_05-tab.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="title">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/common/title_border.png"
+            alt=""
+            width="70px"
+            style="margin: 15px 0px 0px 40px"
+          />
+        </div>
+      </div>
+
+      <div class="mid_yellow">
+        <div class="machine">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/switch_zelda.png"
+            alt=""
+          />
+        </div>
+
+        <div class="twitter">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/zeldaTop--twitTopBanner.png"
+            alt=""
+          />
+        </div>
+        <div class="intro_char">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_char.png"
+            width="100%"
+            alt=""
+          />
+          <div class="intro_about">
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/about_logo.png"
+              width="100%"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="intro">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-01_pc.png"
+            alt=""
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-02_pc.png"
+            alt=""
+            style="margin-left: -20px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-08_pc.png"
+            alt=""
+            style="margin-left: -40px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-03_pc.png"
+            alt=""
+            style="margin-left: -60px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-04_pc.png"
+            alt=""
+            style="margin-left: -80px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-05_pc.png"
+            alt=""
+            style="margin-left: -100px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-06_pc.png"
+            alt=""
+            style="margin-left: -120px; margin-top: 20px"
+          />
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/about_copy-07_pc.png"
+            alt=""
+            style="margin-left: -140px; margin-top: 20px"
+          />
+        </div>
+      </div>
+      <div class="mid_dark">
+        <div class="CHK">
+          <div
+            class="CHK_obj"
+            style="
+              background-image: url('https://www.nintendo.co.kr/character/zelda/img/top/menu_item-01_image-pc.jpg');
+              background-position: -30px -35px;
+            "
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <div class="CHK_title">
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/menu_item-01_title-pctb.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="CHK_bar"></div>
+            <div class="CHK_string">
+              <p>
+                링크, 젤다, 가논돌프...
+                <br />
+                하이랄의 세계를 살아가는 자들
+              </p>
+            </div>
+            <div class="CHK_button"></div>
+            <div style="width: 230px; margin: -70px 185px; position: absolute">
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/menu_item-01_image-char_pc.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+          </div>
+          <div
+            class="CHK_obj"
+            style="
+              background-image: url('https://www.nintendo.co.kr/character/zelda/img/top/menu_item-06_image-pc.jpg');
+              background-position: -30px -35px;
+            "
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <div class="CHK_title" style="width: 150px">
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/menu_item-06_title-pctb.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="CHK_bar"></div>
+            <div class="CHK_string">
+              <p>
+                시리즈의 무대인 하이랄의 역사를
+                <br />
+                지금까지 나온 작품에 따라 되돌아봅시다.
+              </p>
+            </div>
+            <div class="CHK_button"></div>
+          </div>
+          <div
+            class="CHK_obj"
+            style="
+              background-image: url('https://www.nintendo.co.kr/character/zelda/img/top/menu_item-02_image-pc.jpg');
+              background-position: -30px -35px;
+            "
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <div class="CHK_title" style="width: 195px">
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/top/menu_item-02_title-pctb.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="CHK_bar"></div>
+            <div class="CHK_string">
+              <p>
+                모험을 이야기하는데 있어 빼놓을 수 없는
+                <br />
+                다양한 용어들을 풀어서 설명합니다.
+              </p>
+            </div>
+            <div class="CHK_button"></div>
+          </div>
+        </div>
+        <div style="width: 1000px; position: absolute; margin: 460px 280px">
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/zelda-hr.png"
+            alt=""
+          />
+        </div>
+        <div
+          style="width: 200px; position: absolute; margin: 575px 890px"
+          onmouseover="this.style.opacity= 0.8"
+          onmouseout="this.style.opacity=1"
+        >
+          <img
+            src="https://www.nintendo.co.kr/character/zelda/img/top/title_lineup-pc.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="event"
+          onmouseover="this.style.opacity= 0.8"
+          onmouseout="this.style.opacity=1"
+        >
+          <div class="event_img">
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/top_feature_banner-04.png"
+              alt=""
+            />
+          </div>
+          <div class="event_str">
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/common/zelda-arrow.svg"
+              alt=""
+            />
+            <div style="margin-top: -2px">
+              &nbsp;&nbsp;젤다의 전설 티어스 오브 더 킹덤&nbsp;&nbsp; |&nbsp;
+              2023년 5월 12일(금) 발매
+            </div>
+          </div>
+        </div>
+        <div
+          class="event2"
+          onmouseover="this.style.opacity= 0.8"
+          onmouseout="this.style.opacity=1"
+        >
+          <div class="event_img">
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/top_feature_banner-03.png"
+              alt=""
+            />
+          </div>
+          <div class="event_str">
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/common/zelda-arrow.svg"
+              alt=""
+            />
+            <div style="margin-top: -2px">
+              &nbsp;&nbsp;젤다의 전설 브레스 오브 더 와일드&nbsp;&nbsp; |&nbsp;
+              2018년 2월 1일(목) 발매
+            </div>
+          </div>
+        </div>
+        <div class="lineup">
+          <div
+            style="width: 100px; margin: 24px 87px"
+            onmouseover="this.style.opacity= 0.8"
+            onmouseout="this.style.opacity=1"
+          >
+            <img
+              src="https://www.nintendo.co.kr/character/zelda/img/top/zelda-lineup-button.svg"
+              alt=""
+            />
+          </div>
+          style="width: 100px; margin: 24px 87px"
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bt">
+          <div class="bt_nav">
+            <div class="nav" style="width: 475px; margin: 0px 15px">
+              <div
+                style="width: 47%"
+                onmouseover="this.style.opacity= 0.8"
+                onmouseout="this.style.opacity=1"
+              >
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_02-tab.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+                width="0.2%"
+                alt=""
+                style="padding: 3%"
+              />
+              <div
+                style="width: 37%"
+                onmouseover="this.style.opacity= 0.8"
+                onmouseout="this.style.opacity=1"
+              >
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_03.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+                width="0.2%"
+                style="padding: 3%"
+                alt=""
+              />
+              <div
+                style="width: 47%"
+                onmouseover="this.style.opacity= 0.8"
+                onmouseout="this.style.opacity=1"
+              >
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_04.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                src="https://www.nintendo.co.kr/character/zelda/img/common/menu_spacer.png"
+                width="0.2%"
+                style="padding: 3%"
+                alt=""
+              />
+              <div
+                style="width: 27%"
+                onmouseover="this.style.opacity= 0.8"
+                onmouseout="this.style.opacity=1"
+              >
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/top/header_menu-item_05-tab.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bt_home">
+            <a href="../main.html"
+              ><div class="gohome">
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/common/zelda-arrow.svg"
+                  alt=""
+                />
+                <div
+                  style="margin: -3px 0px"
+                  onmouseover="this.style.opacity= 0.8"
+                  onmouseout="this.style.opacity=1"
+                >
+                  &nbsp;&nbsp;닌텐도 홈페이지
+                </div>
+              </div></a
+            >
+            <div class="gohome">
+              <div class="gohome">
+                <img
+                  src="https://www.nintendo.co.kr/character/zelda/img/common/zelda-arrow.svg"
+                  alt=""
+                />
+                <div
+                  style="margin: -3px 0px"
+                  onmouseover="this.style.opacity= 0.8"
+                  onmouseout="this.style.opacity=1"
+                >
+                  &nbsp;&nbsp;웹사이트 정책
+                </div>
+              </div>
+            </div>
+            <div class="cor">@Nintendo</div>
+          </div>
+        </div>
+        <div
+          style="
+            width: 72px;
+            height: 83px;
+            margin: 400px 1575px;
+            position: absolute;
+          "
+          onmouseover="this.style.opacity= 0.8"
+          onmouseout="this.style.opacity=1"
+        >
+          <a href="#link"><img src="download.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
