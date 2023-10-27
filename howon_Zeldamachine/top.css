@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 1920px;
+  height: 960px;
+  background-color: rgb(202, 182, 99);
+  display: flex;
+}
+.grass_left {
+  width: 400px;
+}
+.grass_right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 0px 1820px;
+}
+.grass_bottom {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  margin: 862px 0px;
+}
+.top_gw {
+  width: 410px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 200px 270px;
+  position: absolute;
+}
+.gw_content1 {
+  width: 290px;
+  height: 260px;
+}
+.gw_content2 {
+  width: 410px;
+  height: 55px;
+}
+.gw_battle {
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 720px 430px;
+}
+.gw_worrior {
+  width: 210px;
+  height: 90px;
+}
+.gw_mob {
+  width: 74px;
+  height: 90px;
+}
+.top_machine {
+  width: 850px;
+  height: 510px;
+  display: flex;
+  position: absolute;
+  margin: 130px 810px;
+}
+.top_screen {
+  width: 365px;
+  height: 275px;
+  position: absolute;
+  margin: 115px 240px;
+}
+.top_mob {
+  width: 85px;
+  height: 75px;
+  position: absolute;
+  margin: 0px 0px;
+  position: absolute;
+  margin: 50px 1650px;
+}
+.top_intro {
+  width: 540px;
+  height: 185px;
+  position: absolute;
+  display: flex;
+  margin: 730px 1200px;
+}
+.top_intro_str {
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  margin: 50px 25px;
+}

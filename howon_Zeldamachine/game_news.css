@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+border: 1px solid black;
+width:
+height:
+*/
+.game_news {
+  width: 100%;
+  height: 530px;
+  background-color: rgb(232, 214, 180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gn_main {
+  width: 860px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.gn_news {
+  width: 120px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gn_newsimg {
+  width: 120px;
+  height: 40px;
+}
+.gn_contents {
+  width: 710px;
+  height: 420px;
+  border-left: 2px solid gray;
+  display: flex;
+  justify-content: flex-end;
+}
+.contentsbox {
+  width: 675px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gn_content {
+  width: 675px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.gn_contentimg {
+  width: 207px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.gn_contentstr {
+  width: 440px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.gn_contentstr_date {
+  width: 110px;
+  height: 20px;
+  color: #009540;
+  font-family: -apple-system, "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo !important;
+  vertical-align: baseline;
+  font-weight: 600;
+  font-size: 18px;
+}
+.gn_contentstr_str {
+  width: 440px;
+  height: 55px;
+  columns: #323232;
+  font-family: -apple-system, "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo !important;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-top: 2px;
+}

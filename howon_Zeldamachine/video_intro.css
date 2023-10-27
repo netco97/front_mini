@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.video_intro {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://www.nintendo.co.kr/hardware/gamewatch/zelda/assets/img/movie/bg-movie-thumb.png");
+}
+.vi_str {
+  width: 190px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin: 60px 0px;
+}
+.str_english {
+  width: 70px;
+  height: 16px;
+}
+.str_korean {
+  width: 192px;
+  height: 47px;
+}
+.vi_border {
+  border: 8px solid #323232;
+  width: 860px;
+  height: 500px;
+  display: flex;
+
+  position: absolute;
+  margin: 175px 0px;
+}
+.vi_video {
+  border: 3px solid #323232;
+  width: 840px;
+  height: 475px;
+  position: absolute;
+  align-self: center;
+  margin: 0px 9px;
+}
+.black1 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 41px solid #323232;
+  border-left: 0px solid transparent;
+  border-right: 42px solid transparent;
+  margin: 460px -1px;
+  z-index: 3;
+}
+.black2 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 42px solid #323232;
+  border-left: 0px solid transparent;
+  border-right: 41px solid transparent;
+  transform: rotate(90deg);
+  margin: -1px -1px;
+  z-index: 3;
+}
+.black3 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 42px solid #323232;
+  border-left: 0px solid transparent;
+  border-right: 41px solid transparent;
+  transform: rotate(180deg);
+  margin: -1px 820px;
+  z-index: 3;
+}
+.black4 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 41px solid #323232;
+  border-left: 0px solid transparent;
+  border-right: 42px solid transparent;
+  transform: rotate(270deg);
+  margin: 460px 820px;
+  z-index: 3;
+}

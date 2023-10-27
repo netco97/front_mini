@@ -33,6 +33,10 @@ a {
     animation: scroll 30s linear infinite; /* 무한 롤링 애니메이션 적용 */
 }
 
+.slide:hover{
+    opacity: .82;
+}
+
 .slide {
     flex: 0 0 auto;
     width: 230px; /* 각 슬라이드의 너비 설정 */
@@ -533,6 +537,7 @@ a {
 }
 
 .amiibo_button:hover {
+    padding: 11px 36px;
     border: 2px solid #009beb;
     background-color: white;
 }
@@ -564,6 +569,7 @@ a {
 .amiibo_button2:hover {
     border: 2px solid #a5c80f;
     background-color: white;
+    padding: 9px 28px;
 
 }
 

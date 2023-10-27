@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+  border: 1px solid black;
+    width: 
+    height: 
+*/
+.game_available {
+  width: 1920px;
+  height: 720px;
+  background-color: rgb(233, 200, 100);
+  display: flex;
+  flex-direction: column;
+}
+.ga_top {
+  width: 1920px;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.ga_top_main {
+  width: 900px;
+  height: 400px;
+}
+.ga_main_title {
+  width: 900px;
+  height: 170px;
+}
+.ga_title_top {
+  width: 900px;
+  height: 60px;
+}
+.ga_title_mid {
+  width: 900px;
+  height: 20px;
+}
+.ga_title_bt {
+  width: 900px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ga_bt_game {
+  width: 62px;
+  height: 17px;
+}
+.ga_bt_4 {
+  width: 472px;
+  height: 47px;
+}
+.ga_intro_str {
+  width: 900px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+}
+.ga_str_in {
+  width: 900px;
+  height: 160px;
+  margin: 20px 0px;
+  color: #323232;
+  position: absolute;
+  font-family: -apple-system, "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo !important;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: center;
+}
+.ga_mid {
+  border: 1px solid rgb(255, 255, 255);
+  width: 1920px;
+  height: 240px;
+  background-image: url("https://www.nintendo.co.kr/hardware/gamewatch/zelda/assets/img/game/bg-game-wide.png");
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ga_mid_main {
+  width: 860px;
+  height: 210px;
+  margin-top: 30px;
+}
+.ga_main_screen {
+  width: 860px;
+  height: 152px;
+  display: flex;
+  justify-content: space-between;
+}
+.ga_screen_content {
+  width: 152px;
+  height: 152px;
+}
+.ga_main_str {
+  width: 890px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin-left: -15px;
+}
+.ga_str_content {
+  width: 184px;
+  height: 35px;
+  color: white;
+  font-family: -apple-system, "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo !important;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 17px;
+  text-align: center;
+}

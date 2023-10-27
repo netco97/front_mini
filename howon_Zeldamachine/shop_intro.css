@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #323232;
+  font-family: -apple-system, "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo !important;
+  font-weight: 600;
+  line-height: 1.6;
+}
+/* 
+    border: 1px solid black;
+      width: 
+      height: 
+  */
+.shop_intro {
+  width: 1920px;
+  height: 1000px;
+  display: flex;
+}
+.shop_main {
+  width: 1870px;
+  height: 870px;
+  margin: 90px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro_title {
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  font-size: 30px;
+}
+.intro_main {
+  width: 1025px;
+  height: 790px;
+  display: flex;
+  justify-content: end;
+}
+.intro_str_container {
+  width: 590px;
+  height: 770px;
+  margin: 0px -20px;
+}

@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.game_watch {
+  width: 1920px;
+  height: 1030px;
+  background-image: url("https://www.nintendo.co.kr/hardware/gamewatch/zelda/assets/img/watch-and-timer/bg-watch-timer.png");
+  background-image: 100%;
+}
